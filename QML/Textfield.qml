@@ -1,5 +1,5 @@
-import QtQuick 1.0
-import 'colibri'
+import QtQuick 2.2
+
 Image {
     id: textInput
     source: "images/profile/UI_Profile_TextInsert.png"
@@ -21,22 +21,11 @@ Image {
         transformOrigin: Item.Center
         activeFocusOnPress: true
         cursorVisible: false
-        CLKeyboard{
-            id: keyboard
-            width: 600
-            visible: false
-            onCancelCLButtonClicked:{keyboard.visible = false}
-            onOkCLButtonClicked:{keyboard.visible = false }
-            anchors.top: parent.bottom
-            anchors.topMargin: 10
-            anchors.left: parent.left
-            anchors.leftMargin: -50
-        }
+
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                        keyboard.visible = true
-                        textInput.state = 'keyboardTime'
+
             }                  
         }
     }

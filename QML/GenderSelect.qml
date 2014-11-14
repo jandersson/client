@@ -1,4 +1,4 @@
-import QtQuick 1.0
+import QtQuick 2.2
 
 Item {
     id: genderSelectItem
@@ -8,8 +8,6 @@ Item {
         id: genderSelection
         x: 37
         y: 222
-        width: 138
-        height: 63
         opacity: 1
         source: "images/profile/UI_Profile_Gender_Btn.png"
 

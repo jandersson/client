@@ -1,5 +1,17 @@
-import QtQuick 1.0
+import QtQuick 2.2
 
+
+Image {
+    id: patientPageBack
+    anchors.centerIn: parent
+    source: 'images/patientpage/UI_PatientPage_back.png'
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {pageLoader.source = "SymptomsTab.qml"}
+    }
+}
+
+/*
     Image {
         id: patientPageBack
         anchors.centerIn: parent
@@ -28,6 +40,7 @@ import QtQuick 1.0
         cellHeight: 150
         snapMode: GridView.SnapOneRow
         flow: GridView.TopToBottom
+        /*
         model: patientListModel
         delegate: Component {
                 Column {
@@ -56,17 +69,18 @@ import QtQuick 1.0
                             text: model.patient.p_last_name
                         }
                     }
-                        Text {
-                            id: village
-                            color: '#58595b'
-                            font.family: 'DroidSans'
-                            font.pointSize: 10
-                            text: model.patient.p_village
-                        }
+                    Text {
+                        id: village
+                        color: '#58595b'
+                        font.family: 'DroidSans'
+                        font.pointSize: 10
+                        text: model.patient.p_village
+                    }
                     
                 }
+            }*/
+/*
             }
-            }        
    }
         Text {
             id: patientsText
@@ -185,4 +199,4 @@ import QtQuick 1.0
                 //onClicked: page.state == 'sortByOpen' ? page.state = 'sortByClosed' : page.state = 'sortByOpen';
             }
         }
-    }
+    }*/

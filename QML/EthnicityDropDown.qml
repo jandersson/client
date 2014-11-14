@@ -1,4 +1,4 @@
-import QtQuick 1.0
+import QtQuick 2.2
 
 Rectangle {
 	id: ethnicList
@@ -38,7 +38,7 @@ Rectangle {
 				model: ethnicityDropDownContainer.ethnicity
 				delegate: Text {
 					text: modelData
-					}	
+				}	
 			}  
 		}     
 	}	
